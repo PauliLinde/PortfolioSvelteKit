@@ -1,3 +1,19 @@
+<script>
+		export let form;
+</script>
+
+{#if form?.success}
+	<div class="success-message">
+		{form.message}
+	</div>
+{/if}
+
+{#if form?.error}
+	<div class="error-message">
+		{form.error}
+	</div>
+{/if}
+
 <form method="POST" action="/form">
 	<label>
 		Email

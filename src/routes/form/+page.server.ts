@@ -1,4 +1,4 @@
-import type { Actions } from '@sveltejs/kit';
+import { type Actions, fail } from '@sveltejs/kit';
 
 export const actions: Actions = {
 	default: async ({ request }) => {
@@ -6,15 +6,38 @@ export const actions: Actions = {
 		const email = formData.get('email') as string;
 		const message = formData.get('message') as string;
 
-		const response = await fetch('http://localhost:8000/newMessage', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				email,
-				message
-			}),
-		});
+		if (!email || !message) {
+			return fail(400, { error: 'Email and message are required' });
+		}
+
+		try {
+			const response = await fetch('http://localhost:8000/newMessage', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					email,
+					message
+				}),
+			});
+
+			if (!response.ok) {
+				const errorData = await response.json();
+				return fail(response.status, { error: errorData.error || 'Server error' });
+			}
+
+			const result = await response.json();
+
+			if (result.success) {
+				return { success: true, message: 'Message sent successfully!' };
+			} else {
+				return fail(500, { error: 'Failed to save message' });
+			}
+
+		} catch (error) {
+			console.error('Fetch error:', error);
+			return fail(500, { error: 'Network error - could not connect to server' });
+		}
 	}
 };
