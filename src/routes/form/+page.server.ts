@@ -6,7 +6,7 @@ export const actions: Actions = {
 		const email = formData.get('email') as string;
 		const message = formData.get('message') as string;
 
-		const response = await fetch('http://localhost:8080/newMessage', {
+		const response = await fetch('http://localhost:8000/newMessage', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
