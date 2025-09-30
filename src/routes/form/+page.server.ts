@@ -11,7 +11,7 @@ export const actions: Actions = {
 		}
 
 		try {
-			const response = await fetch('http://myportfolio.eu-north-1.elasticbeanstalk.com/newMessage', {
+			const response = await fetch('https://master-7rqtwti-4e2gmrm2schue.eu-5.platformsh.site/newMessage', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
