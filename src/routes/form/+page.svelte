@@ -16,6 +16,10 @@
 
 <form method="POST" action="/form">
 	<label>
+		Name
+		<input name="name" type="text" autocomplete="off">
+	</label>
+	<label>
 		Email
 		<input name="email" type="email" autocomplete="off">
 	</label>
