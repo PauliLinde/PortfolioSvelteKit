@@ -3,11 +3,12 @@ import { type Actions, fail } from '@sveltejs/kit';
 export const actions: Actions = {
 	default: async ({ request }) => {
 		const formData = await request.formData();
+		const name = formData.get('name') as string;
 		const email = formData.get('email') as string;
 		const message = formData.get('message') as string;
 
-		if (!email || !message) {
-			return fail(400, { error: 'Email and message are required' });
+		if (!name || !email || !message) {
+			return fail(400, { error: 'Name, email and message are required' });
 		}
 
 		try {
@@ -17,6 +18,7 @@ export const actions: Actions = {
 					'Content-Type': 'application/json',
 				},
 				body: JSON.stringify({
+					name,
 					email,
 					message
 				}),
