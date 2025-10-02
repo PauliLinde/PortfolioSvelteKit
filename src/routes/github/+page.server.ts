@@ -1,4 +1,3 @@
-import { GITHUB_TOKEN } from '$env/static/private';
 import type { PageServerLoad } from './$types';
 
 interface Repo {
@@ -9,13 +8,7 @@ interface Repo {
 }
 
 export const load: PageServerLoad = async () => {
-	// Hämta från GitHub API (om du vill ha live data)
-	const response = await fetch('https://api.github.com/users/paulilinde/repos', {
-		headers: {
-			'Authorization': `token ${GITHUB_TOKEN}`,
-			'Accept': 'application/vnd.github.v3+json'
-		}
-	});
+	const response = await fetch('https://api.github.com/users/paulilinde/repos');
 
 	const githubRepos = await response.json();
 
