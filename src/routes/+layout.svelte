@@ -8,6 +8,7 @@
 <nav>
 	<a href="/">Home</a>
 	<a href="/about">About</a>
+	<a href="/github">My GitHub</a>
 	<a href="/form">Contact me</a>
 </nav>
 
