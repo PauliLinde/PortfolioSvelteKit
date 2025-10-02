@@ -16,13 +16,12 @@
 
 <div class="min-h-screen flex items-center justify-center bg-gray-50 px-4 py-12">
 	<div class="w-full max-w-2xl bg-white rounded-lg shadow-md p-6 sm:p-8">
-		<form method="POST" action="/form">
+		<form method="POST">
 			<label for="Name" class="relative">
 				<input
 					type="text"
 					id="name"
 					name="name"
-					placeholder=""
 					class="peer mt-0.5 w-full rounded border-gray-300 shadow-sm sm:text-sm"
 					required
 				/>
@@ -37,7 +36,6 @@
 					type="email"
 					id="Email"
 					name="email"
-					placeholder=""
 					class="peer mt-0.5 w-full rounded border-gray-300 shadow-sm sm:text-sm"
 					required
 				/>
@@ -52,7 +50,6 @@
 			<textarea
 				id="message"
 				rows="5"
-				placeholder=""
 				name="message"
 				class="peer mt-0.5 w-full rounded border-gray-300 shadow-sm sm:text-sm resize-y"
 				required
