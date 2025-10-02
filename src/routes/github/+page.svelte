@@ -5,7 +5,8 @@
 	$: repos = data.repos;
 </script>
 
-<div>
+<div class="container mx-auto px-4 py-8">
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 	{#each repos as repo}
 		<article class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-xs">
 			<img
@@ -36,6 +37,7 @@
 		</article>
 
 	{/each}
+</div>
 </div>
 
 
