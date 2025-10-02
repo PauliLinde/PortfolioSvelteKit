@@ -8,9 +8,7 @@ export const actions: Actions = {
 		const message = formData.get('message') as string;
 
 		if (!name || !email || !message) {
-			return fail(400, {
-				error: `DEBUG - Name: "${name}", Email: "${email}", Message: "${message}"`
-			});
+			return fail(400, { error: 'Name, email and message are required' });
 		}
 
 		try {
