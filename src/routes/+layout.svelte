@@ -32,6 +32,8 @@
 		</div>
 </header>
 
+{@render children?.()}
+
 <footer class="bg-white">
 	<div class="mx-auto max-w-screen-xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-24">
 
@@ -114,6 +116,3 @@
 		</div>
 	</div>
 </footer>
-
-
-{@render children?.()}
