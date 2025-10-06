@@ -35,19 +35,17 @@
 {@render children?.()}
 
 <footer class="bg-white">
-	<div class="mx-auto max-w-screen-xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-24">
+	<div class="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8 lg:pt-16">
 
 		<div class="text-center">
-			<p class="mx-auto mt-4 max-w-sm text-gray-500">
+			<p class="mx-auto mt-2 max-w-sm text-gray-500">
 				&copy; 2025 Paulina Linderborg
 			</p>
 		</div>
 
-		<div
-			class="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24"
-		>
+		<div class="mt-6 border-t border-gray-100 pt-6 sm:flex sm:items-center sm:justify-center">
 
-			<ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
+			<ul class="flex justify-center gap-6">
 				<li>
 					<a
 						href="https://www.facebook.com/jus.paulina"
