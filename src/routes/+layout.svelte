@@ -37,22 +37,15 @@
 <footer class="bg-white">
 	<div class="mx-auto max-w-screen-xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-24">
 
+		<div class="text-center">
+			<p class="mx-auto mt-4 max-w-sm text-gray-500">
+				&copy; 2025 Paulina Linderborg
+			</p>
+		</div>
+
 		<div
 			class="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24"
 		>
-			<ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
-				<li>
-					<a href="#" class="text-gray-500 transition hover:opacity-75"> Terms & Conditions </a>
-				</li>
-
-				<li>
-					<a href="#" class="text-gray-500 transition hover:opacity-75"> Privacy Policy </a>
-				</li>
-
-				<li>
-					<a href="#" class="text-gray-500 transition hover:opacity-75"> Cookies </a>
-				</li>
-			</ul>
 
 			<ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
 				<li>
