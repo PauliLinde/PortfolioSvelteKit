@@ -38,7 +38,6 @@ export const actions: Actions = {
 			}
 
 		} catch (error) {
-			console.error('Fetch error:', error);
 			return fail(500, { error: 'Network error - could not connect to server' });
 		}
 	}

@@ -75,8 +75,7 @@
 					</div>
 
 					<div class="flex justify-center lg:justify-start pt-6">
-						<a
-							href="/github"
+						<a href="/github"
 							class="group inline-block rounded-full bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 p-[2px] hover:text-white focus:ring-3 focus:outline-hidden transition-all"
 						>
               <span class="block rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent transition-all">
@@ -93,34 +92,7 @@
 						class="rounded-lg shadow-xl w-full max-w-sm object-cover aspect-square"
 					/>
 				</div>
-
 			</div>
 		</div>
-
 	</div>
 </div>
-
-<style>
-    @keyframes slide-loop {
-        0% {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-        20% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        80% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        100% {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-    }
-
-    .animate-slide-loop {
-        animation: slide-loop 4s ease-in-out infinite;
-    }
-</style>

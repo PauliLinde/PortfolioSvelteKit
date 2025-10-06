@@ -28,8 +28,8 @@
 					</li>
 				</ul>
 			</nav>
-			</div>
 		</div>
+	</div>
 </header>
 
 {@render children?.()}

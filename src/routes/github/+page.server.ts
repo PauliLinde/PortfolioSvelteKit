@@ -16,7 +16,7 @@ export const load: PageServerLoad = async () => {
 		title: repo.name,
 		description: repo.description || 'No description',
 		link: repo.html_url,
-		img: `https://opengraph.githubassets.com/1/${repo.full_name}` // GitHub's OG image
+		img: `https://opengraph.githubassets.com/1/${repo.full_name}`
 	}));
 
 	return { repos };
