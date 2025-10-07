@@ -1,38 +1,53 @@
-# sv
+# Portfolio Frontend - SvelteKit
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Det här är mitt skolprojekt till DevOps kursen. PortfolioSvelteKit är frontend delen till mitt portfolio, där jag presenterar mig själv och visar upp mina prjekt. Här kan besökare även skicka ett meddelande genom ett kontaktformulär som kopplas till backend API:t.
 
-## Creating a project
+## Teknologier
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **SvelteKit** - Fullstack-ramverk för Svelte
+- **TypeScript** - Programmeringsspråk
+- **Vercel** - Hosting platform
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Live Demo
 
-# create a new project in my-app
-npx sv create my-app
+Portfolio: [https://paulinas-portfolio.vercel.app/](https://paulinas-portfolio.vercel.app/)
+
+## Förutsättningar
+
+- Node.js 18 eller högre
+- npm
+
+## Installation
+
+1. Klona repositoryt:
+```bash
+git clone https://github.com/PauliLinde/PortfolioSvelteKit.git
+cd PortfolioSvelteKit
 ```
 
-## Developing
+2. Installera dependencies:
+```bash
+npm install
+```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Utveckling
 
-```sh
+Starta utvecklingsservern:
+```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+När appen är igång kommer du kunna se i terminalen vilke port appen är tillgänglig på, oftast på `http://localhost:5173`, men siffran kan bli högre om den porten är upptagen
 
-To create a production version of your app:
+## Deployment
 
-```sh
-npm run build
-```
+Projektet är deployat på Vercel och är tillgänglig på:
+[https://paulinas-portfolio.vercel.app/](https://paulinas-portfolio.vercel.app/)
 
-You can preview the production build with `npm run preview`.
+## Utvecklare
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+[Pauli Linde](https://github.com/PauliLinde)
+
+## Relaterade Projekt
+
+Backend: [PortfolioSymfony](https://github.com/PauliLinde/PortfolioSymfony)
